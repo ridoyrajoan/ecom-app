@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Arial';
+  background: #022c43;
+  color: #fff;
+}
+h1,
+h2,
+h3 {
+  margin: 0.5rem 0;
+  color: #fff;
+}
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.2rem;
+}
+h3 {
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Main Css */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+.row.center {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.col-1 {
+  flex: 1;
+}
+.col-2 {
+  flex: 2;
 }
 
-.App-link {
-  color: #61dafb;
+.block {
+  background-color: #003754;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+.text-right {
+  text-align: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* 
+.pad-mid {
+  padding: 0 100px;
+} */
+
+.mb-5 {
+  margin-bottom: 10px;
 }
+
+button.badge {
+  background-color: #f04040;
+  border: none;
+  color: #ffffff;
+  width: 1.5rem;
+}
+
+.header {
+  background: #003754;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* width: 100%; */
+}
+
+.products {
+  display: flex;
+}
+
+.products .single-product {
+  padding: 0 15px;
+  margin-bottom: 30px;
+  border: 2px solid #104969;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+
+.products .single-product .thumb-image {
+  width: 100%;
+  height: 115px;
+  margin-bottom: 10px;
+}
+
+.products .single-product .item-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.products .single-product .price {
+  font-size: 18px;
+  font-weight: 400;
+  color: #929292;
+  margin-bottom: 15px;
+}
+
+
+.cart {
+  border: 2px solid #ffde316b;
+  padding: 1rem;
+  margin: 0.5rem;
+  min-height: 250px;
+  border-radius: 6px;
+}
+
+.addItem {
+  margin-right: 10px !important;
+  font-size: 16px !important;
+}
+
+.removeItem {
+  font-size: 16px !important;
+}
+
+
