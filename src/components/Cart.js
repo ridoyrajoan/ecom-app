@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     },
     paper: {
       backgroundColor: theme.palette.background.paper,
-      border: '2px solid #000',
+      border: '2px solid #022c43',
       boxShadow: theme.shadows[5],
       padding: theme.spacing(2, 4, 3),
     },
@@ -58,8 +58,9 @@ const Cart = (props) => {
                         <div key={product.id} className="row mb-5">
                             <div className="col-2">{product.title}</div>
                             <div className="col-2">
-                                <Button variant="contained" color="primary" size="small" onClick={() => onAdd(product)} className="addItem">+</Button>
-                                <Button variant="contained" color="secondary" size="small" onClick={() => onRemove(product)} className="removeItem">-</Button>
+                                <Button variant="contained" color="primary" size="small" onClick={() => onAdd(product)} className="addItem"><span className="material-icons">+</span></Button>
+
+                                <Button variant="contained" color="secondary" size="small" onClick={() => onRemove(product)} className="removeItem"><span className="material-icons">-</span></Button>
                             </div>
                             <div className="col-2 text-right">
                                 {product.qty} X ${product.price.toFixed(2)}
@@ -103,7 +104,7 @@ const Cart = (props) => {
                             </div>
                             <hr></hr>
                             <div className="row">
-                                <Button variant="contained" color="secondary" onClick={handleOpen}>Checkout</Button>   
+                                <Button variant="contained" color="secondary" className="mt-5" onClick={handleOpen}>Checkout</Button>   
 
                                 <Modal
                                     aria-labelledby="transition-modal-title"

@@ -58,6 +58,10 @@ a {
   margin-bottom: 10px;
 }
 
+.mt-5 {
+  margin-top: 20px !important;
+}
+
 button.badge {
   background-color: #f04040;
   border: none;

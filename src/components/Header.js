@@ -1,10 +1,14 @@
 import React from 'react';
 import { Button, Typography } from "@material-ui/core";
+import useStore from '../store';
 
 const Header = (props) => {
+    const logo = useStore(state => state.logo)
     return (
         <header className="header block">
-            <Typography style={{ display: "inlineBlock" }} variant="h5">eCommerce App</Typography>
+            {logo.map(l => (
+                <Typography style={{ display: "inlineBlock" }} variant="h5">{l}</Typography>
+            ))}
             <Button variant="contained" color="secondary">Cart {' '}
                 {props.countCartItems ? (
                     <span>({props.countCartItems})</span>
