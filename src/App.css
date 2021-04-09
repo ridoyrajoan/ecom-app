@@ -134,3 +134,25 @@ button.badge {
 }
 
 
+
+.checkoutForm {
+  color: #022c43;
+}
+
+.checkoutForm h2 {
+  color: #022c43;
+}
+
+.checkoutForm input {
+  margin-bottom: 15px;
+}
+
+.checkoutForm .MuiFormControl-root, .checkoutForm .MuiTextField-root {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.checkoutForm button {
+  margin-top: 15px;
+}
+
